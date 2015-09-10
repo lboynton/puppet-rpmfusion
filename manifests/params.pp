@@ -45,7 +45,7 @@ class rpmfusion::params {
         $supported_gpg = ['',6]
         $type = 'el'
         if $rpmfusion::with_version == true {
-          $version = $::os_maj_version
+          $version = $::operatingsystemmajrelease
         } else {
           $version = ''
         }
